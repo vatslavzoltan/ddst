@@ -37,6 +37,12 @@ body textarea:required:valid
 html, body
 	height: 100%
 
+.text_left
+	text-align: left
+
+.text_right
+	text-align: right
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -45,10 +51,145 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	color: $color
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
+.top_line
+	position: fixed
+	background-color:  #EFF0EE
+	top: 0
+	right: 0
+	left: 0
+	z-index: 3
+.top_line_content
+	max-width: 1000px
+	margin: 0 auto
+.main_logo
+	width: 115px
+	float: left
+	margin-top: 10px
+.nav
+	float: right
+	font-size: 0
+	li
+		a
+			color: $color
+.nav_item
+	display: inline-block
+	font-size: 18px
+	font-weight: bold
+	margin-right: 40px
+	position: relative
+	padding: 25px 0
+	&:last-child
+		margin-right: 0
+	&:hover .sub_nav
+		display: block
+.sub_nav
+	display: none
+	position: absolute
+	left: 0
+	bottom: -200px
+	background-color: #EFF0EE
+	width: 275px
+	padding: 20px 30px
+.sub_nav_item
+	margin-bottom: 25px
+.main_head
+	height: 110vh
+	position: relative
+.video_bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 1
+	overflow: hidden
+	video
+		position: absolute
+		top: 0
+		left: 0
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
+@supports (object-fit: cover)
+     #video-bg > video
+         top: 0
+         left: 0
+         width: 100%
+         height: 100%
+         object-fit: cover
+.header_title_wrapper
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 85%
+	transform: translate(-50%,-50%)
+	z-index: 2 
+.header_title
+	font-size: 87px
+	color: #fff
+.footer
+	padding: 25px 0 25px 25px
+	background-color:  #002D4A
+	color: #bfbfbf
+	font-size: 16px
+.toggle_menu
+	width: 60px
+	height: 60px
+	right: 20px
+	top: 5px
+	position: fixed
+	z-index: 100
+	border: none
+	outline: none
+	background-color: transparent
+
+/* Hamburger */
+
+.nav_icon
+  transform: rotate(0deg)
+  transition: .5s ease-in-out
+  cursor: pointer
+  display: none
+
+
+.nav_icon span
+  display: block
+  position: absolute
+  height: 3px
+  width: 100%
+  border-radius: 9px
+  background-color: $color
+  opacity: 1
+  left: 0
+  transform: rotate(0deg)
+  transition: .25s ease-in-out
+
+.nav_icon span:nth-child(1)
+  top: 10px
+
+.nav_icon span:nth-child(2)
+  top: 28px
+
+.nav_icon span:nth-child(3)
+  top: 46px
+
+.nav_icon.open span:nth-child(1)
+  top: 28px
+  transform: rotate(135deg)
+
+.nav_icon.open span:nth-child(2)
+  opacity: 0
+  left: -60px
+
+.nav_icon.open span:nth-child(3)
+  top: 28px
+  transform: rotate(-135deg)
 @import "media" // Всегда в конце
