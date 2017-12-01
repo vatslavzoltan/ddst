@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Contact Us</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="is_home">
+	<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+	<div class="site_overlay"></div>
+	<div class="wrapper">
+		<div class="top_line">
+			<button class="nav_icon toggle_menu">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</button>
+			<div class="top_line_content mx_width clearfix">
+				<div class="main_logo">
+					<a href="index.html" class="home_link">
+						<img src="img/DDST_logo.png" alt="DDST" class="img-responsive">
+					</a>
+				</div>
+				<ul class="nav top_menu">
+					<li class="nav_item">
+						<a href="#" class="nav_link" id="drop_down_wrapper">SOLUTIONS</a>
+						<ul class="sub_nav">
+							<li class="sub_nav_item"><a href="dating.html" class="sub_nav_link">Dating</a></li>
+							<li class="sub_nav_item"><a href="mobile.html" class="sub_nav_link">Mobile monitezation</a></li>
+							<li class="sub_nav_item"><a href="performance.html" class="sub_nav_link">Performance Marketing</a></li>
+						</ul>
+					</li>
+					<li class="nav_item"><a href="company.html" class="nav_link">COMPANY</a></li>
+					<li class="nav_item"><a href="partners.html" class="nav_link">PARTNERS</a></li>
+					<li class="nav_item"><a href="contact.html" class="nav_link">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+		<section class="contact_content">
+			<div class="header_bg_img">
+				<img src="img/company_bg.jpg" alt="#" class="img-responsive">
+				<div class="header_bg_img_ovelay"></div>
+			</div>
+			<div class="mx_width">
+				<h2 class="contact_header">Write us a message</h2>
+				<form class="callback clearfix">
+					<div class="success"><a href="#" class="close_succes" onclick="event.preventDefault(); $('.success').removeClass('active').hide();$('.reset').val('');$('.error-box').hide();" style="color: #fff">x</a><span>Your email sent, we reply you shortly!</span></div>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="DDST">
+					<input type="hidden" name="admin_email" value="vatslav.zoltan@gmail.com"><!-- Admin email -->
+					<input type="hidden" name="form_subject" value="DDST application">
+					<input type="hidden" name="DDST page" value="">
+					<!-- END Hidden Required Fields -->
+					<div class="input_wrapper clearfix">
+						<div class="input_box fl">
+							<input class="reset" type="text" name="Name" id="user_name" placeholder="Your name">
+							<div class="error-box" style="color: #ff0000; font-size: 12px;"></div>
+						</div>
+						<div class="input_box fr">
+							<input class="reset" type="email" name="E-mail" id="user_email" placeholder="Email">
+							<div class="error-box" style="color: #ff0000; font-size: 12px;"></div>
+						</div>
+					</div>
+					<textarea class="reset" name="Message" id="message_text"  cols="30" rows="8" placeholder="Your message"></textarea>
+					<div class="error-box" style="color: #ff0000; font-size: 12px;"></div>
+					<button class="sub_button" onclick="checkForm()">Send a message</button>
+				</form>
+			</div>
+		</section>
+		<footer class="footer">
+			<p class="copy">&copy 2017 DDSTgroup</p>
+		</footer>
+	</div>
+	
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -4,16 +4,83 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
-
+	.bottom_logo_descr
+		img
+			width: 150px
+	.arrow_lines_wrapper
+		img
+			width: 150px
+	.arrow_lines_wrapper
+		.center_a
+			width: 130px
+	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
+	.bottom_logo_descr
+		img
+			margin-right: 50px
+	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.video_bg
+		video
+			display: none
+	.main_logo
+		padding-left: 20px
+	.sub_nav
+		position: initial
+		width: 100%
+		padding: 0
+		overflow: hidden
+		display: block
+		transition: all .3s ease
+		height: 0
+		&.active
+			height: auto
+			transition: all .3s ease
+	#drop_down_wrapper
+		background-position: 70% -14px
+		padding-right: 0
+		&.active
+			background-position: 70% 10px
+	.header_bg_img
+		height: 200px
+	.contact_header,.partners_header
+		margin: 0 auto
+		text-align: center
+		margin-top: 20px
+	.sub_button
+		float: none
+		margin: 0 auto
+		display: block
+		font-size: 18px
+		padding: 25px
+	.input_box
+		display: block
+		width: 100%
+	.fr,.fl
+		float: none
+	.callback
+		padding: 40px 5px 0
+	.solutions_descr
+		display: block
+	.solutions_content
+		.contact_link
+			padding: 25px 65px
+	.company_descr
+		width: 95%
+	.company_descr_p,.solutions_descr_text,.solutions_logo
+		float: none
+		width: 100%
+		text-align: center
+	.contact_link
+			float: none
+			margin: 0 auto
+			display: inline-block
+			margin-top: 50px
+	.company_text_content
+			text-align: center
 	.nav_icon
 		display: block
 	.nav
@@ -22,7 +89,7 @@
 		max-width: 480px
 		position: fixed
 		background-color: #fff
-		top: 77px
+		top: 65px
 		right: 0
 		text-align: center
 		&.active
@@ -36,12 +103,46 @@
 	.nav_item
 		display: block
 		margin-right: 0
-
+	.bottom_logo_descr
+		img
+			width: 100px
+	.arrow_lines_wrapper
+		img
+			width: 100px
+	.arrow_lines_wrapper
+		.center_a
+			width: 80px
+	.bottom_logo_descr
+		img
+			margin-right: 30px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.header_bg_img
+		height: 160px
+	.partner_item
+		width: 50%
+		img
+			width: 90%
+	.partners_content
+		height: auto
+	.footer
+		margin-top: 0
+	.top_logo_descr
+		width: 100px
 	.header_title
 		font-size: 30px
-
+	.bottom_logo_descr
+		img
+			width: 80px
+	.arrow_lines_wrapper
+		img
+			width: 80px
+	.arrow_lines_wrapper
+		.center_a
+			width: 70px
+	.bottom_logo_descr
+		img
+			margin-right: 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -74,3 +175,6 @@
 @media only screen and (min-width : 1200px)
 	/**/
 
+@media only screen and (max-height : 414px) and (orientation: landscape)
+	.nav_item
+		padding: 10px 0
